@@ -1,0 +1,635 @@
+/*
+	Theme Name: Na'amal
+	Theme URI:
+	Description: Na’amal partners with leading organisations to support refugees through skills training, mentorship and remote work placement opportunities.,
+	Version: 1.2
+	Author: Re:Coded Labs
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+.sectionTitle {
+  font-size: 42px;
+  text-align: center;
+  color: #000000;
+}
+.IntroPicPos{
+	top:10px;
+	margin: 3%;
+    position: relative;
+}
+
+.IntroHeadingPos{
+	
+            position: relative;
+            top: 17px;
+            left: 100px;
+}
+
+.IntroTrianglePos{
+	
+            position: absolute;
+            top: 510px;
+            right: 400px;
+}
+
+.sectionMargin {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+.marginTop50 {
+  margin-top: 50px;
+}
+.fz-18 {
+  font-size: 18px;
+}
+
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+#header {
+  height: 64px;
+  width: 100%;
+}
+
+.shadowHeader {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
+}
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav .nav-item {
+  margin-left: 40px;
+}
+.nav .nav-item .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+}
+.nav .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #f78e39;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f78e39;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #333;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 20px;
+  }
+}
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+footer .style-1 {
+  border-top: 1px solid #e6e6e6;
+}
+footer .copyRights {
+  font-weight: 500;
+  font-size: 12px;
+  color: #939393;
+}
+
+.footer-icons {
+  display: flex;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .footerNavLinks {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .logoAndCopyRights {
+    text-align: center;
+  }
+}
+
+/*------------------------------------*\
+    Front Page
+\*------------------------------------*/
+
+/* ----------- Intro Section -----------*/
+.introHeadCaption h1 {
+  font-size: 38px;
+  line-height: 1.5em;
+  margin-top: 120px;
+  color: #000;
+}
+.introHeadCaption h1 span {
+  display: block;
+}
+.introSecCaption {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 300;
+  width: 65%;
+  margin-bottom: 80px;
+  color: #241f21;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .col1 {
+    width: 35%;
+  }
+  .introHeadCaption h1 {
+    font-size: 32px;
+  }
+  .introSecCaption {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .introContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .col1 {
+    width: 100%;
+    text-align: center;
+  }
+  .introSecCaption {
+    padding: 0 30px;
+  }
+  .introRectangle {
+    display: none;
+  }
+  .intro {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* -------------- What We Do Section ------------- */
+.whatWeDoBox {
+  margin-top: 100px;
+}
+.whatWeDoSection .whatWeDoBoxHeader {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.whatWeDoSection .whatWeDoBoxCaption {
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+}
+
+/* ------------- Our Impact Section -------------- */
+.ourImpactContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exTheProblemSpan {
+  font-size: 14px;
+  color: #939393;
+}
+.ourImpactContainer .rightCol {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 540px;
+}
+
+.ourImpactTitle {
+  line-height: 1.5;
+  font-size: 36px;
+  color: #241f21;
+}
+.ourImpactcaption {
+  color: #241f21;
+  font-size: 18px;
+}
+a.readOurImpactLink {
+  display: inline-block;
+  margin-top: 36px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 16px 36px;
+}
+a.readOurImpactLink:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ourImpactImg {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .ourImpactContainer {
+    flex-direction: column;
+  }
+  .ourImpactImg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .rightCol {
+    text-align: center;
+  }
+}
+
+/* ------------- Our Partners Section -------------- */
+.ourPartnersSection .carousel {
+  margin: 50px auto 0;
+}
+.ourPartnersSection .carousel .carousel-item {
+  min-height: 260px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.ourPartnersSection .carousel .carousel-item .img-box {
+  height: 84px;
+  width: 100%;
+  position: relative;
+  padding-top:20px;
+}
+
+.ourPartnersSection .carousel .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.ourPartnersSection .carousel .ourPartnersHeader {
+  font-size: 20px;
+  margin-top: 24px;
+  color: #000;
+}
+
+.ourPartnersSection .carousel .ourPartnersCaption {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.ourPartnersSection .carousel-control-prev,
+.ourPartnersSection .carousel-control-next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #333;
+  border-radius: 56px;
+}
+
+.ourPartnersSection .carousel-control-next {
+  right: 43%;
+}
+.ourPartnersSection .carousel-control-prev {
+  left: 42%;
+}
+
+a.getInvolvedLink {
+  display: inline-block;
+  /* margin-top: 120px; */
+  margin-top: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 16px 76px;
+  background-color: #1e787c;
+  color: #fff;
+}
+a.getInvolvedLink:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .ourPartnersSection .carousel {
+    margin-bottom: 50px;
+  }
+  .ourPartnersSection .carousel-control-next {
+    right: 33%;
+  }
+  .ourPartnersSection .carousel-control-prev {
+    left: 32%;
+  }
+}
+
+/* ------------- Quotes Section -------------- */
+.quotesSection #carouselContent {
+  background-color: #ffe4d2;
+  min-height: 593px;
+  color: #1e787c;
+  padding: 100px;
+}
+.quotesArrows {
+  display: flex;
+}
+.quotesArrows .carousel-control-next,
+.quotesArrows .carousel-control-prev {
+  position: relative;
+  width: 7%;
+  margin-right: 10px;
+}
+
+.quotesSection .carousel-inner {
+  margin-top: 55px;
+}
+
+.quotesSection .carousel-inner .carousel-item {
+  width: 75%;
+}
+.quotesSection .carousel-inner .carousel-item h1 {
+  margin-bottom: 65px;
+}
+.quotesSection .carousel-inner .carousel-item p {
+  width: 50%;
+}
+
+/* ------------- Resources Section -------------- */
+.thumbnail {
+  min-height: 210px;
+  /* max-height: 210px; */
+  width: 100%;
+}
+
+/*------------------------------------*\
+    About Page
+\*------------------------------------*/
+
+.teamRow {
+  margin-top: 80px;
+}
+.memberName {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #000;
+}
+.memberTitle {
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+  font-weight: 300;
+  color: #000;
+}
+.col-xs-15 {
+  width: 20%;
+}
+
+/*------------------------------------*\
+    Our Purpose Page
+\*------------------------------------*/
+.ourPurposeTitle {
+  margin: 120px 0;
+}
+.ourVisionSection {
+  background-color: #ffe4d2;
+  padding: 84px;
+  color: #1e787c;
+}
+.getInvolvedLinkOurPurpose {
+  margin-bottom: 180px;
+}
+
+/*------------------------------------*\
+    Our Impact Page
+\*------------------------------------*/
+.blogPostHeader {
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.blogPostTitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.blogPostCaption {
+  font-size: 14px;
+  color: #241f21;
+}
+.blogPostDate {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #7d7d7d;
+  letter-spacing: 0.04rem;
+}
+.getInvolvedLinkBlog {
+  margin-bottom: 100px;
+}
+
+.catList {
+  display: flex;
+  list-style: none;
+  margin: 40px 0 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+.catList .cat-item-1 {
+  display: none;
+}
+
+.cat-item {
+  margin-right: 24px;
+}
+
+.cat-item a {
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 15px 20px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.cat-item a:hover,
+.current-cat a {
+  background-color: #1e787c;
+  color: #fff;
+  border: 1px solid #1e787c;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .catList {
+    flex-direction: column;
+  }
+
+  .cat-item {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+/*------------------------------------*\
+    Single Post Page
+\*------------------------------------*/
+.singlePost {
+  color: #000;
+}
+.singlePost .postTitle a {
+  display: inline-block;
+  margin-top: 100px;
+  color: #000;
+}
+.singlePost p {
+  font-size: 18px;
+  text-align: left;
+}
+.singlePost p > img {
+  margin: 20px 0;
+}
+
+.shareOnSocialMedia {
+  margin-top: 180px;
+  font-size: 24px;
+}
+
+.socialLinks {
+  margin-bottom: 180px;
+}
+
+.socialLinks li {
+  display: inline-block;
+  margin: 17px;
+}
+
+.socialLinks li a {
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  border-radius: 30px;
+  color: #333;
+}
+
+.socialLinks li a img {
+  margin-right: 10px;
+}
+
+/*------------------------------------*\
+    Get Involved Page
+\*------------------------------------*/
+.getInvolved {
+  margin-bottom: 180px;
+}
+div.wpforms-container-full .wpforms-form input:not([type="checkbox"]) {
+  height: 56px !important;
+}
+div.wpforms-container-full .wpforms-form input {
+  padding: 16px 20px !important;
+}
+div.wpforms-container-full .wpforms-form textarea {
+  min-height: 200px !important;
+}
+div.wpforms-container-full .wpforms-form input,
+div.wpforms-container-full .wpforms-form textarea {
+  border: 1px solid #e6e6e6 !important;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+}
+
+div.wpforms-container-full .wpforms-form input:focus,
+div.wpforms-container-full .wpforms-form textarea:focus {
+  border: 1px solid #f59c50 !important;
+  box-shadow: 0 0 3pt 2pt rgba(247, 143, 56, 0.16);
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  margin-top: 48px;
+  font-size: 16px !important;
+  background: transparent !important;
+  padding: 10px 73px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 69px !important;
+  color: #000 !important;
+}
+
+/* Our Impact page */
+article#post-1 {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article#post-2 {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article#post-3 {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* .custom-built {
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .custom-built {
+    text-align: right;
+    padding-right: 35px;
+  }
+} */
